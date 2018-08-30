@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './top-nav.css';
+import { connect } from 'react-redux';
 
 export default function TopNav(props) {
   return (
@@ -40,3 +41,5 @@ export default function TopNav(props) {
     </nav>
   );
 }
+
+export default connect()(TopNav);
